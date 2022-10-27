@@ -9,6 +9,8 @@ function changeCardBg(event) {
   isIgnite = !isIgnite;
   card.style.background = `url(../public/${background}.svg)`;
 }
+card.addEventListener("click", changeCardBg);
+
 VanillaTilt.init(card, {
   max: 20,
   speed: 100,
@@ -18,5 +20,3 @@ const img = document.querySelector(".card > img");
 VanillaTilt.init(img, {
   perspective: 1000,
 });
-
-card.addEventListener("click", changeCardBg);
