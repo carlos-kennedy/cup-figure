@@ -1,0 +1,19 @@
+@mixin gradient {
+  background: linear-gradient(151.79deg, $color-g1 4.34%, $color-g2 87.6%);
+}
+
+@mixin border {
+  border: 0.4rem solid $color-border;
+}
+
+@mixin make-this-flex($val) {
+  @if $val == column {
+    display: flex;
+    flex-flow: column;
+  } @else if $val == column-center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

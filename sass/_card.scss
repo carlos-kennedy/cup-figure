@@ -1,0 +1,39 @@
+div.card {
+  @include make-this-flex(column);
+  width: 26.4rem;
+  height: 41.9rem;
+  gap: 9.5rem;
+  background: url(../public/explorer-card.svg);
+  user-select: none;
+  border-radius: 1.3rem;
+  transition: filter .9s;
+  cursor: pointer;
+
+  &:hover{
+   filter: saturate(120%);
+  }
+  img {
+    @include border;
+    align-self: center;
+    margin-top: 10rem;
+    margin-right: 1rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+  .user-info {
+    margin-left: 2.5rem;
+    color: $color-txt;
+
+    h1 {
+      font-size: 1.8rem;
+      line-height: 140%;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 160%;
+    }
+  }
+}
