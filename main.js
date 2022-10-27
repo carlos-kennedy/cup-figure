@@ -1,14 +1,16 @@
 import "./sass/style.css";
 import VanillaTilt from "vanilla-tilt";
 
-const card = document.querySelector(".card");
-let isIgnite = false;
+let card = document.querySelector(".card");
+let isIgnite = true;
 function changeCardBg(event) {
-  const card = event.currentTarget;
-  const background = isIgnite ? "explorer-card" : "ignite-card";
+  card = event.currentTarget;
+  const background = isIgnite
+    ? card.classList.add("ignite")
+    : card.classList.remove("ignite");
   isIgnite = !isIgnite;
   // card.style.background = `url(../public/${background}.svg)`;
-  card.setAttribute("style", `background: url(./public/${background}.svg)`);
+  // card.setAttribute("style", `background: url(./public/${background}.svg)`);
 }
 card.addEventListener("click", changeCardBg);
 

@@ -6,11 +6,15 @@ div.card {
   background: url(../public/explorer-card.svg);
   user-select: none;
   border-radius: 1.3rem;
-  transition: filter .9s;
+  transition: filter 0.9s;
   cursor: pointer;
 
-  &:hover{
-   filter: saturate(120%);
+  &.ignite {
+    background: url(../public/ignite-card.svg);
+  }
+
+  &:hover {
+    filter: saturate(120%);
   }
   img {
     @include border;
