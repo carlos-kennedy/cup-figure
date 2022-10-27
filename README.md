@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Cup Card é um projeto que simula uma figurinha de album de copa, só que mas para devs. 🤓
+O Cup Card é um projeto que simula uma figurinha de album de copa, só que mais para devs. 🤓
 
 ## 🔖 Layout
 
