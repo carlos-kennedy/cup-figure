@@ -9,8 +9,6 @@ function changeCardBg(event) {
     ? card.classList.add("ignite")
     : card.classList.remove("ignite");
   isIgnite = !isIgnite;
-  // card.style.background = `url(../public/${background}.svg)`;
-  // card.setAttribute("style", `background: url(./public/${background}.svg)`);
 }
 card.addEventListener("click", changeCardBg);
 
