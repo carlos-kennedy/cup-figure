@@ -8,6 +8,7 @@ div.card {
   border-radius: 1.3rem;
   transition: filter 0.9s;
   cursor: pointer;
+  transition: background .8s;
 
   &.ignite {
     background: url(../public/ignite-card.svg);
