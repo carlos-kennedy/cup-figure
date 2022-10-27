@@ -1,8 +1,10 @@
 import "./sass/style.css";
+import "./public/explorer-card.svg";
+import "./public/ignite-card.svg";
 import VanillaTilt from "vanilla-tilt";
 
 const card = document.querySelector(".card");
-let isIgnite = true;
+let isIgnite = false;
 function changeCardBg(event) {
   const card = event.currentTarget;
   const background = isIgnite ? "explorer-card" : "ignite-card";
