@@ -7,7 +7,7 @@ function changeCardBg(event) {
   const card = event.currentTarget;
   const background = isIgnite ? "explorer-card" : "ignite-card";
   isIgnite = !isIgnite;
-  card.style.background = `url(./public/${background}.svg)`;
+  card.style.background = `url(/public/${background}.svg)`;
 }
 VanillaTilt.init(card, {
   max: 20,
